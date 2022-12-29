@@ -15,21 +15,29 @@
     <h1>Cash Register Manager</h1>
     <p>Enter the bill amount and cash given by the customer to know the minimum number of notes to return.</p>
 
-    <form>
-        <label for="bill-amount">Bill Amount:</label> <br>
-        <input type="number" id="bill-amount"> <br>
 
-        <label for="cash-given">Cash Given:</label> <br>
-        <input type="number" id="cash-given"> <br>
+    <label for="bill-amount">Bill Amount:</label> <br>
+    <input type="number" id="bill-amount"> <br>
 
-        <button>Check</button>
-    </form>
+    <label for="cash-given">Cash Given:</label> <br>
+    <input type="number" id="cash-given"> <br>
+
+    <button id="check-button">Check</button>
+
+    <p id="error-message"></p>
+
 
     <table>
         <caption>Return Change</caption>
         <tr>
             <th>No. of notes </th>
-            <td></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
         </tr>
         <tr>
             <th>Note</th>
@@ -39,11 +47,11 @@
             <td>20</td>
             <td>10</td>
             <td>5</td>
-            <td>2</td>
             <td>1</td>
         </tr>
     </table>
 
+    <script src="cashRegister.js"></script>
 </body>
 
 </html>
